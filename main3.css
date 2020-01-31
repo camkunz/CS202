@@ -1,0 +1,71 @@
+@importurl('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+:root{
+    --main-color: #05a081;
+    -webkit-text-fill-color: #fff;
+    --dark-color: #000;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sigmar One', cursive;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    display: block;
+    grid-auto-flow: column;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    font-size: 30px;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* units - px, % , vh, vw, em (parent), rem (root) */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    flex:1;
+    margin: 0 .4rem;
+    position: relative;
+
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 11.2rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.banner{
+    background: #3f51b5;
+    height: 100vh;
+
+}
+nav ul li ul{
+    position: absolute;
+    box-decoration-break: vr(--text-color);
+    width: 100px;
+    top: 100%;
+    display: none;
+}
+nav ul li ul li a{
+    color: var(--dark-color) !important;
+
+
+}
+nav ul li
